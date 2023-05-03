@@ -48,17 +48,42 @@ else Console.WriteLine($"Number of the quadrant is {result}");
 
 //Task3. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу 
 //квадратов чисел от 1 до N.
+
 /*
+void TablKvad(int N)
+{
+    for (int i = 1; i <= N; i++)
+    {
+        Console.WriteLine($"{i} x {i} = {i * i}");
+    }
+    Console.WriteLine();
+}
+
 Console.WriteLine("Input a number: ");
 int num = Convert.ToInt32(Console.ReadLine());
-
-for (int i= 1;i<=num;i++)
-{
-    Console.WriteLine($"{i} x {i} = {i*i}");
-}
-Console.WriteLine();
+TablKvad(num);
 */
+
 
 //Task4. Напишите программу, которая принимает на вход координаты двух точек и находит 
 //расстояние между ними в 2D пространстве.
+/*
+Console.WriteLine("Input first point coordinates: ");
+int x1 = Convert.ToInt32(Console.ReadLine());
+int y1 = Convert.ToInt32(Console.ReadLine());
 
+Console.WriteLine("Input second point coordinates: ");
+int x2 = Convert.ToInt32(Console.ReadLine());
+int y2 = Convert.ToInt32(Console.ReadLine());
+
+double DistanceBetween(int x1, int x2, int y1, int y2)
+{
+
+    int catet1 = x2 - x1;
+    int catet2 = y2 - y1;
+    double distance = Math.Sqrt(catet1 * catet1 + catet2 * catet2);
+    return distance;
+}
+double distance = Math.Round(DistanceBetween(x1, x2, y1, y2),2);
+Console.WriteLine($"Distance between poin A and B is: {distance}");
+*/
