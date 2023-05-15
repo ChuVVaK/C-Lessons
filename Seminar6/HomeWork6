@@ -73,3 +73,4 @@ int x = CrossPoint(k1, b1, k2, b2);
 int y = k1 * x + b1;
 
 Console.WriteLine($"Cross point has this coordinates: {x}, {y}");
+*/
