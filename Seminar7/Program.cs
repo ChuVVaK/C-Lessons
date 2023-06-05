@@ -1,5 +1,5 @@
 ﻿//Задайте двумерный массив размером m×n, заполненный случайными целыми числами.
-
+/*
 int[,] CreateRandom2dArray(int rows, int columns, int minValue, int maxValue)
 {
     int[,] array = new int[rows, columns];
@@ -20,7 +20,7 @@ void Show2dArray(int[,] array)
     }
     Console.WriteLine();
 }
-
+*/
 /*
 Console.WriteLine("Input quantity of rows: ");
 int rows = Convert.ToInt32(Console.ReadLine());
@@ -60,12 +60,11 @@ Show2dArray(myArray);
 // Задача 2. Задайте двумерный массив. Найдите элементы, у которых оба индекса чётные, и замените эти элементы на их квадраты.
 
 /*
-int [,] EvenIndex(int[,] array)
+void EvenIndex(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i +=2)
         for (int j = 0; j < array.GetLength(1); j +=2)
-            if (i==j) array[i, j] *= array[i, j];
-    return array;
+            array[i, j] *= array[i, j];
 }
 
 Console.WriteLine("Input quantity of rows: ");
