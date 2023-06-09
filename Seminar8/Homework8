@@ -18,30 +18,6 @@ void Show2dArray(int[,] array)
     Console.WriteLine();
 }
 
-//Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
-
-void ArrangeArray(int[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            int minRow = i;
-            int minColumn = j;
-
-            if (array[i, j] < array[minRow, minColumn])
-            {
-                minRow = i;
-                minColumn = j;
-            }
-
-            int temporary = array[i, j];
-            array[i, j] = array[minRow, minColumn];
-            array[minRow, minColumn] = temporary;
-        }
-    }
-}
-
 Console.WriteLine("Input quantity of rows: ");
 int rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input quantity of columns: ");
