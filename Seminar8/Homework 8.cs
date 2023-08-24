@@ -174,7 +174,7 @@ int[,,] myArray = CreateRandom3dArray(rows, columns, page);
 Show3dArray(myArray);
 */
 //  Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4. 
-
+/*
 int k = 4;
 int[,] spiralArray = new int[k, k];
 
@@ -212,5 +212,5 @@ void WriteArray (int[,] array)
     Console.WriteLine();
   }
 }
-
+*/
 
